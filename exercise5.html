@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+  <head>
+  	<script src="vendor/js/angular.min.js"></script>
+  </head>
+
+  
+ <body data-ng-init="customers = [{name:'John Smith', city: 'New York'}, {name: 'John Doe', city: 'Phoenix'}, {name:'Marc Thomsom', city:'California'}]">
+  	<div>
+      <h1>Exercise 5</h1>
+  		<hr/>
+      <label>Search:</label>
+      <input type="text" data-ng-model="name"/>{{name}}
+  		<ul>
+  			<li data-ng-repeat="cust in customers | filter:name | orderBy:'city'">{{ cust.name | uppercase }} - {{cust.city | lowercase}}</li>
+      </ul>
+  	</div>
+    <a href="index.html">Back to index</a>
+  </body>
+  
+</html>
