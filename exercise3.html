@@ -1,0 +1,18 @@
+<html ng-app>
+<head>
+	<script src="vendor/js/angular.min.js"></script>
+	<title>Exercise 3</title>
+</head>
+<body>
+	<h1>Exercise 3</h1>
+	<div class="container" data-ng-init="names=['Dave','Napur', 'Heedy', 'Shirva']">
+		<h3>Looping with a Angular directive</h3>
+		<ol>
+			<li data-ng-repeat="name in names">
+				{{name}}
+			</li>
+		</ol>
+	</div>
+	<a href="index.html">Back to index</a>
+</body>
+</html>

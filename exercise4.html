@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+  <head>
+  	<script src="vendor/js/angular.min.js"></script>
+  </head>
+
+  
+ <body data-ng-init="names = ['John Smith', 'John Doe', 'Jane Doe']">
+  	<div>
+      <h1>Exercise 1</h1>
+  		<label>Name:</label>
+  		<input type="text" ng-model="YourName" placeholder="Enter a name here"/>{{ YourName }}
+  		<hr/>
+  		<ul>
+  			<li data-ng-repeat="personName in names">{{ personName }}</li>
+  		</ul>
+  	</div>
+    <a href="index.html">Back to index</a>
+  </body>
+  
+</html>
